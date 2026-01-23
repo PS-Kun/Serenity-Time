@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Permanent Marker", cursive;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+    
+
+}
+
+.words{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 5%;
+    left: 25%;
+    font-size: 70px;
+
+
+}
+
+video{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    /* opacity: 0; */
+    z-index: -1;
+
+}
+
+.vid1{
+    z-index: 1;
+}
+
+
+.container{
+    z-index: 2;
+    width: 800px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    
+}
+.clock{
+    z-index: 2;
+    height: 100%;
+    width: 100%; 
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.11) ;
+    backdrop-filter: blur(10px);
+
+
+}
+
+.thumbnail{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 2%;
+    gap: 5px; 
+    overflow-y: scroll;
+    overflow-x: hidden ;
+    height: 100vh;
+    /* display: none; */
+}
+
+.thumbnail::-webkit-scrollbar{
+    display: none;
+ }
+
+ .log0{
+    z-index: 2;
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.11) ;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    right:185px;
+    
+    top: 50%;
+ }
+
+/* .audio{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    top: 40%;
+    left: 1%;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+} */
+
+.audio-icon{
+    z-index: 2;
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.11) ;
+    backdrop-filter: blur(10px);
+    position: relative;
+    top: 50%;
+    left: 189px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8 ease;
+
+
+}
+
+.audio-icon i{
+    position: absolute;
+    color: white;
+
+}
+
+.audio-icon i:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.audi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9px 0;
+    color: white;
+    font-size: 19px;;
+}
+
+.audi:hover{
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.11) ;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+
+}
+
+.audio-select{
+    height:200px;
+    width: 150px;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.11) ;
+    backdrop-filter: blur(10px);
+    /* display: none; */
+    position: relative;
+    top: 34%;
+    left: 2%;
+    z-index: 2;
+}
+
+.log{
+    
+    z-index: 2;
+    height: 200px;
+    width: 150px;
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.15) ;
+    backdrop-filter: blur(5px);
+    transition: transform 0.8 ease;
+
+}
+
+.log:hover{
+    transform: scale(1.02);
+    opacity: 1;
+    cursor: pointer;
+   
+}
+
+.log0{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.log0:hover{
+    cursor: pointer;
+}
+
+.log0 i{
+    color: white;
+}
+
+.log0 i:hover{
+     cursor: pointer;
+     transform: scale(1.5);
+}
+
+
+
+
+.log1{
+
+    background-image: url(./images/tea-window.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.log2{
+
+    background-image: url(./images/window.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    
+}
+
+.log3{
+
+    background-image: url(./images/tomato.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    
+}
+
+.log4{
+
+    background-image: url(./images/light-window.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    
+}

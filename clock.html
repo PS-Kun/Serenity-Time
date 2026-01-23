@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./clock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+        
+
+    <div class="hero">
+        <div class="words">
+          <h3>Be Calm And Focus</h3> 
+        </div>
+
+       
+        <video autoplay loop muted class="previd vid1" >
+           <source src="./videos/tea-window.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop muted class="previd vid2" >
+           <source src="./videos/window.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop muted class="previd vid3" >
+           <source src="./videos/tomato.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop muted class="previd vid4" >
+           <source src="./videos/light-window.mp4" type="video/mp4">
+        </video>
+
+
+         <video autoplay loop muted class="audio">
+           <source src="" type="audio/mpeg">
+        </video>
+
+
+
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span >:</span>
+                <span id="mins">00</span>
+                <span >:</span>
+                <span id="secs">00</span>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            
+            <div class="log1 log" ></div>
+            <div class="log2 log" ></div>
+            <div class="log3 log" ></div>
+            <div class="log4 log" ></div>
+        </div>
+
+        <!-- <div class="photos">
+            <div class="pic1 pics" ></div>
+            <div class="pic2 pics" ></div>
+            <div class="pic3 pics" ></div>
+            <div class="pic4 pics" ></div>
+        </div> -->
+
+        <div class="log0"><i class="fa-solid fa-image"></i></div>
+
+        
+            
+         
+        <div class="audio-icon" ><i class="fa-solid fa-music"></i> </div>
+
+        <div class="audio-select">
+            <div class="audio1 audi">Light Drizzle</div>
+            <div class="audio2 audi">Rain and Birds</div>
+            <div class="audio3 audi">Rain</div>
+            <div class="audio4 audi">Soft Rain</div>
+            <div class="audio5 audi">No Audio</div>
+        </div>
+        
+
+
+    </div> 
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./clock.js"></script>
+</body>
+</html>
