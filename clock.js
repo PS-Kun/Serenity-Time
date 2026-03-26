@@ -58,7 +58,27 @@ audio5.addEventListener("click", () => {
   
 })
 
+
+if (window.matchMedia("(max-width: 870px)").matches){
+
 log0.addEventListener("click", () => {
+  if( thumbnail.style.display !== "none"){
+    thumbnail.style.display = "none";
+     gsap.to(log0, {
+      x: 50,
+  })
+  }else{
+    thumbnail.style.display = "block";
+     gsap.to(log0, {
+      x: 0
+  })
+  }
+
+})
+
+}else{
+
+  log0.addEventListener("click", () => {
   if( thumbnail.style.display !== "none"){
     thumbnail.style.display = "none";
      gsap.to(log0, {
@@ -70,13 +90,32 @@ log0.addEventListener("click", () => {
       x: 0
   })
   }
-  
-
- 
 
 })
+}
+
+
+if (window.matchMedia("(max-width: 870px)").matches){
 
 audioIcon.addEventListener("click", () => {
+  
+  if( selectAudio.style.display !== "none"){
+    selectAudio.style.display = "none";
+    gsap.to(audioIcon, {
+      x: -50,
+  })
+  }else{
+    selectAudio.style.display = "block";
+    gsap.to(audioIcon, {
+      x: 0
+  })
+  }
+
+});
+
+}else{
+
+  audioIcon.addEventListener("click", () => {
   
   if( selectAudio.style.display !== "none"){
     selectAudio.style.display = "none";
@@ -91,6 +130,9 @@ audioIcon.addEventListener("click", () => {
   }
 
 });
+
+}
+
 
 setInterval(()=>{
   let currentTime= new Date();  
