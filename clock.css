@@ -3,6 +3,16 @@
     padding: 0;
     font-family: "Permanent Marker", cursive;
 }
+
+body{
+    font-size: 20px;
+}
+
+
+
+
+
+
 .hero{
     position: relative;
     height: 100vh;
@@ -18,7 +28,8 @@
     color: white;
     top: 5%;
     left: 25%;
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: 3em;
 
 
 }
@@ -40,8 +51,10 @@ video{
 
 .container{
     z-index: 2;
-    width: 800px;
-    height: 150px;
+    width: 60%;
+    max-width: 800px;
+    height: 20%;
+    max-height: 150px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -204,7 +217,7 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .log0:hover{
@@ -256,4 +269,31 @@ video{
     background-size: cover;
     opacity: 0.5;
     
+}
+
+
+@media (max-width: 870px){
+
+    body{
+    font-size: 20px;
+}
+  .words{
+    font-size: 2em;
+  }
+
+  .log0{
+    top:0.5%;
+    position: fixed;
+    right: 58px;
+  }
+  .audio-icon{ 
+    top:0.5%;
+    left: 50px;
+  }
+  .audio-select{
+    top: 2%;
+  }
+  .thumbnail{
+    top: 0;
+  }
 }
